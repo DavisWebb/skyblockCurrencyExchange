@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Skyblock Currency Exchange</title>
+        <link rel="stylesheet" href="sbce.css">
+        <link rel="icon" href="images/Bits_Talisman.webp" type="image/webp">
+    </head>
+    <body class="body">
+        <div class="header">
+            <div class="subtitle">Skyblock Currency Exchange</div>
+            <button class="resetButton" id="resetButton" onclick="resetAll()"> <-- Go Back</button>
+        </div>
+        <div class="selectionGrid" id="selectionGrid">
+            <div class="bitsShop">
+                <button class="bitsButton" id="bitsButton" onclick="updateData(1)">Bits</button>
+            </div>
+            <div class="copperShop">
+                <button class="copperButton" id="copperButton" onclick="updateData(2)">Copper</button>
+            </div>
+            <div class="pestShop">
+                <button class="pestButton" id="pestButton" onclick="updateData(3)">Pests</button>
+            </div>
+        </div>
+        <div class="resultContainer" id="resCont">
+            <table class="resultTable" id="results"></table>
+        </div>
+        <div class="loading" id="loading">Loading...</div>
+        <div class="progressIndicator" id="progressIndicator">Checking Page 0/50...</div>
+        <script src="sbce.js"></script>
+    </body>
+</html>
